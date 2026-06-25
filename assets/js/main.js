@@ -422,4 +422,46 @@
     update();
   })();
 
+  /* --------------------------------------------------------------------- */
+  /* Cinematic hero — the cup grows as you scroll, then the page continues */
+  /* --------------------------------------------------------------------- */
+  (function cinematicHero() {
+    var section = $("[data-cine]");
+    if (!section) return;
+    var scaleEl = $("[data-cine-scale]", section);
+    var content = $("[data-cine-text]", section);
+    var scrim = $(".cine__scrim", section);
+    var cup = $("[data-cine-cup]", section);
+    var cue = $("[data-cine-cue]", section);
+
+    // Reduced motion → leave it as a calm, static hero (no pin, no zoom).
+    if (reduceMotion) return;
+    section.classList.add("is-cinematic");
+
+    function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+    var ticking = false;
+    function update() {
+      var rect = section.getBoundingClientRect();
+      var distance = section.offsetHeight - window.innerHeight;
+      var p = clamp(-rect.top / (distance || 1), 0, 1);
+
+      if (scaleEl) scaleEl.style.transform = "scale(" + (1 + 2.0 * p).toFixed(3) + ")";
+      if (scrim) scrim.style.opacity = clamp(1 - p / 0.42, 0, 1).toFixed(3);
+      if (cue) cue.style.opacity = clamp(1 - p / 0.06, 0, 1).toFixed(3);
+      if (cup) cup.style.opacity = (p > 0.9 ? 1 - ((p - 0.9) / 0.1) * 0.3 : 1).toFixed(3);
+      if (content) {
+        var c = clamp(1 - p / 0.34, 0, 1);
+        content.style.opacity = c.toFixed(3);
+        content.style.transform = "translateY(" + (-44 * p).toFixed(1) + "px) scale(" + (1 - 0.06 * p).toFixed(3) + ")";
+        content.style.pointerEvents = c < 0.05 ? "none" : "auto";
+      }
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  })();
+
 })();

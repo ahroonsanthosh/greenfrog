@@ -13,12 +13,12 @@
   <meta property="og:type" content="cafe" />
   <meta property="og:title" content="Nectar Coffee House · Cork City" />
   <meta property="og:description" content="Specialty coffee, ceremonial-grade matcha, real-fruit smoothies and soft serve on Parnell Place, Cork. Open 7 days." />
-  <meta property="og:image" content="assets/img/og-image.svg" />
+  <meta property="og:image" content="assets/n1.webp" />
   <meta property="og:locale" content="en_IE" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Nectar Coffee House · Cork City" />
   <meta name="twitter:description" content="Specialty coffee, smoothies &amp; soft serve on Parnell Place, Cork. Open 7 days." />
-  <meta name="twitter:image" content="assets/img/og-image.svg" />
+  <meta name="twitter:image" content="assets/n1.webp" />
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
@@ -119,65 +119,44 @@
   <div class="nav-scrim" id="nav-scrim" hidden></div>
 
   <main id="main">
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="top">
-      <div class="container hero__inner">
-        <div class="hero__copy">
-          <p class="hero__eyebrow reveal" data-reveal>
-            <span class="dot"></span> Parnell Place · Cork City
-          </p>
-          <h1 class="hero__title">
-            <span class="line reveal" data-reveal>Your daily cup</span>
-            <span class="line reveal" data-reveal>of <em>sunshine</em> in</span>
-            <span class="line reveal" data-reveal>the heart of Cork.</span>
-          </h1>
-          <p class="hero__lead reveal" data-reveal>
-            Nectar is a bright, friendly coffee house pouring specialty coffee,
-            ceremonial-grade matcha, real-fruit frozen-yogurt smoothies and creamy
-            soft serve — made with love, seven days a week.
-          </p>
-          <div class="hero__actions reveal" data-reveal>
+    <!-- ============ CINEMATIC HERO ============ -->
+    <section class="cine" id="top" data-cine>
+      <div class="cine__pin">
+        <div class="cine__bg" aria-hidden="true">
+          <span class="cine__glow cine__glow--teal"></span>
+          <span class="cine__glow cine__glow--coral"></span>
+          <span class="cine__grid"></span>
+        </div>
+
+        <div class="cine__cup" data-cine-cup>
+          <div class="cine__cup-scale" data-cine-scale>
+            <img src="assets/n8.webp" width="1020" height="1020" alt="A cappuccino in a turquoise cup on a sunny wooden table at Nectar." fetchpriority="high" />
+          </div>
+        </div>
+
+        <div class="cine__scrim" aria-hidden="true"></div>
+
+        <div class="cine__content" data-cine-text>
+          <p class="eyebrow cine__eyebrow"><span class="dot"></span> Parnell Place · Cork City</p>
+          <h1 class="cine__title">Your daily cup of <em>sunshine</em><br> in the heart of Cork.</h1>
+          <div class="cine__actions">
             <a class="btn btn--solid magnetic" href="#menu" data-magnetic><span>Explore the menu</span></a>
             <a class="btn btn--ghost" href="#visit">
               <span>Find us on Parnell Pl</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
-          <p class="hero__hours reveal" data-reveal>
+          <p class="cine__hours">
             <span class="status-badge" data-open-badge aria-live="polite"><span class="status-badge__dot"></span> <span data-open-text>Open 7 days</span></span>
-            <span class="hero__hours-text">Mon–Fri 7:30–17:30 · Sat 8–17:30 · Sun 8:30–17</span>
+            <span>Mon–Fri 7:30–17:30 · Sat 8–17:30 · Sun 8:30–17</span>
           </p>
         </div>
 
-        <div class="hero__media" data-parallax-scope>
-          <div class="hero__photo hero__photo--main" data-parallax="0.06">
-            <img src="assets/img/ph-latte.svg" width="800" height="1000" alt="A Nectar latte with leaf art in a warm yellow cup." />
-          </div>
-          <div class="hero__photo hero__photo--sub" data-parallax="0.14">
-            <img src="assets/img/ph-storefront.svg" width="1200" height="900" alt="The mint-green Nectar Coffee House storefront on Parnell Place." loading="lazy" />
-          </div>
-
-          <!-- Rotating brand badge -->
-          <div class="hero__badge" aria-hidden="true">
-            <svg viewBox="0 0 120 120" class="hero__badge-ring">
-              <defs><path id="badgeCircle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
-              <text class="hero__badge-text"><textPath href="#badgeCircle" startOffset="0">· SPECIALTY COFFEE · CORK CITY · OPEN 7 DAYS </textPath></text>
-            </svg>
-            <span class="hero__badge-core">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 9h12v3a6 6 0 0 1-12 0Z" stroke="currentColor" stroke-width="1.6"/><path d="M16 10h2a2.5 2.5 0 0 1 0 5h-1.2" stroke="currentColor" stroke-width="1.6"/><path d="M7 5.5c-.8.9-.8 1.8 0 2.7M11 5c-.8.9-.8 1.8 0 2.7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </span>
-          </div>
-
-          <span class="blob blob--coral" aria-hidden="true"></span>
-          <span class="blob blob--mint" aria-hidden="true"></span>
-          <span class="blob blob--yellow" aria-hidden="true"></span>
-        </div>
+        <a href="#welcome" class="cine__cue" data-cine-cue aria-label="Scroll to discover">
+          <span>Scroll</span>
+          <span class="cine__cue-line"></span>
+        </a>
       </div>
-
-      <a href="#welcome" class="hero__scroll" aria-label="Scroll to discover">
-        <span class="hero__scroll-text">Scroll</span>
-        <span class="hero__scroll-line"></span>
-      </a>
     </section>
 
     <!-- ============ MARQUEE ============ -->
@@ -204,7 +183,7 @@
     <section class="welcome section" id="welcome">
       <div class="container welcome__grid">
         <div class="welcome__media reveal" data-reveal>
-          <img src="assets/img/ph-counter.svg" width="1200" height="800" alt="The reclaimed-wood counter and espresso bar inside Nectar." loading="lazy" />
+          <img src="assets/n4.webp" width="574" height="1020" alt="Baristas behind Nectar's reclaimed-wood counter." loading="lazy" />
           <div class="welcome__tag">
             <span class="welcome__tag-num">7</span>
             <span class="welcome__tag-label">days<br>a week</span>
@@ -360,10 +339,10 @@
 
         <div class="story__media" data-parallax-scope>
           <figure class="story__photo story__photo--a reveal" data-reveal data-parallax="0.05">
-            <img src="assets/img/ph-seating.svg" width="1200" height="900" alt="The red banquette and reclaimed-wood tables inside Nectar." loading="lazy" />
+            <img src="assets/n3.webp" width="1360" height="1020" alt="The red banquette and round tables inside Nectar." loading="lazy" />
           </figure>
           <figure class="story__photo story__photo--b reveal" data-reveal data-parallax="0.12">
-            <img src="assets/img/ph-smoothie.svg" width="1000" height="1000" alt="A real-fruit smoothie made with natural frozen yogurt." loading="lazy" />
+            <img src="assets/n6.webp" width="1357" height="1020" alt="A flat white with delicate leaf latte art in a navy cup." loading="lazy" />
           </figure>
           <span class="story__sticker" aria-hidden="true">Est. in Cork</span>
         </div>
@@ -381,28 +360,28 @@
 
       <div class="container-wide">
         <div class="gallery__grid" data-lightbox-group>
-          <button class="gallery__item gallery__item--tall reveal" data-reveal data-lightbox data-full="assets/img/ph-storefront.svg" data-caption="Our mint-green shopfront on Parnell Place">
-            <img src="assets/img/ph-storefront.svg" width="1200" height="900" alt="The Nectar Coffee House storefront." loading="lazy" />
+          <button class="gallery__item gallery__item--tall reveal" data-reveal data-lightbox data-full="assets/n4.webp" data-caption="Behind the counter">
+            <img src="assets/n4.webp" width="574" height="1020" alt="Baristas behind Nectar's reclaimed-wood counter." loading="lazy" />
             <span class="gallery__plus" aria-hidden="true"></span>
           </button>
-          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/img/ph-latte.svg" data-caption="Leaf art, every cup">
-            <img src="assets/img/ph-latte.svg" width="800" height="1000" alt="Latte art in a yellow cup." loading="lazy" />
+          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/n6.webp" data-caption="Leaf art, every cup">
+            <img src="assets/n6.webp" width="1357" height="1020" alt="A flat white with leaf latte art in a navy cup." loading="lazy" />
             <span class="gallery__plus" aria-hidden="true"></span>
           </button>
-          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/img/ph-counter.svg" data-caption="The espresso bar">
-            <img src="assets/img/ph-counter.svg" width="1200" height="800" alt="The Nectar counter and espresso machine." loading="lazy" />
+          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/n9.webp" data-caption="Fresh bakes, daily">
+            <img src="assets/n9.webp" width="574" height="1020" alt="A chocolate traybake with nuts and chocolate drizzle." loading="lazy" />
             <span class="gallery__plus" aria-hidden="true"></span>
           </button>
-          <button class="gallery__item gallery__item--wide reveal" data-reveal data-lightbox data-full="assets/img/ph-seating.svg" data-caption="Pull up a chair">
-            <img src="assets/img/ph-seating.svg" width="1200" height="900" alt="The red banquette seating area." loading="lazy" />
+          <button class="gallery__item gallery__item--wide reveal" data-reveal data-lightbox data-full="assets/n1.webp" data-caption="Our shopfront on Parnell Place">
+            <img src="assets/n1.webp" width="1360" height="1020" alt="The mint-green Nectar Coffee House storefront." loading="lazy" />
             <span class="gallery__plus" aria-hidden="true"></span>
           </button>
-          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/img/ph-menu.svg" data-caption="Today's menu boards">
-            <img src="assets/img/ph-menu.svg" width="800" height="1000" alt="The colourful Nectar menu boards." loading="lazy" />
+          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/n8.webp" data-caption="Cocoa-dusted to order">
+            <img src="assets/n8.webp" width="1020" height="1020" alt="A cappuccino in a turquoise cup, dusted with cocoa." loading="lazy" />
             <span class="gallery__plus" aria-hidden="true"></span>
           </button>
-          <button class="gallery__item gallery__item--tall reveal" data-reveal data-lightbox data-full="assets/img/ph-softserve.svg" data-caption="Soft serve, swirled to order">
-            <img src="assets/img/ph-softserve.svg" width="800" height="1000" alt="A soft serve ice cream cone." loading="lazy" />
+          <button class="gallery__item gallery__item--tall reveal" data-reveal data-lightbox data-full="assets/n5.webp" data-caption="Today's menu boards">
+            <img src="assets/n5.webp" width="765" height="1020" alt="Nectar's colourful coffee, smoothie and ice cream menu boards." loading="lazy" />
             <span class="gallery__plus" aria-hidden="true"></span>
           </button>
         </div>
