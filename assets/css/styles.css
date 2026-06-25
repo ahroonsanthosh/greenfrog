@@ -503,14 +503,25 @@ body.menu-open .mobile-nav { transform: translateX(0); }
 
 /* ------------------------------ Gallery --------------------------------- */
 .gallery__grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: clamp(0.7rem, 1.4vw, 1.1rem);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, clamp(190px, 22vw, 300px));
+  grid-template-areas:
+    "tl a b tr"
+    "tl c d tr";
+  gap: clamp(0.7rem, 1.4vw, 1.1rem);
 }
 .gallery__item {
   position: relative; overflow: hidden; border-radius: var(--r);
   background: var(--cream-2); box-shadow: var(--shadow-sm);
 }
-.gallery__item--tall { grid-row: span 2; }
-.gallery__item--wide { grid-column: span 2; }
+/* Deterministic mosaic — two tall portraits bookend four middles, always tiles cleanly */
+.gallery__item:nth-child(1) { grid-area: tl; }
+.gallery__item:nth-child(2) { grid-area: a; }
+.gallery__item:nth-child(3) { grid-area: b; }
+.gallery__item:nth-child(4) { grid-area: c; }
+.gallery__item:nth-child(5) { grid-area: d; }
+.gallery__item:nth-child(6) { grid-area: tr; }
 .gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease); }
 .gallery__item:hover img { transform: scale(1.07); }
 .gallery__item::after {
@@ -660,8 +671,12 @@ body.menu-open .mobile-nav { transform: translateX(0); }
   .nav__end .btn--solid { display: none; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
   .footer__news { grid-column: 1 / -1; }
-  .gallery__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
-  .gallery__item--wide { grid-column: span 2; }
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none; grid-template-areas: none;
+    grid-auto-rows: clamp(150px, 40vw, 230px);
+  }
+  .gallery__grid .gallery__item { grid-area: auto; }
 }
 
 @media (max-width: 560px) {
