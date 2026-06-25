@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 170" role="img" aria-label="Three hands holding a coffee, a smoothie and an ice cream">
+  <g fill="none" stroke="#9CC9B7" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Hand 1 : takeaway coffee -->
+    <g transform="translate(58,70)">
+      <path d="M-10 92 V44"/>
+      <path d="M10 92 V44"/>
+      <rect x="-13" y="24" width="26" height="20" rx="9"/>
+      <path d="M-6.5 24 v6 M0 24 v6 M6.5 24 v6"/>
+      <path d="M-11 22 L-8.5 -16 H8.5 L11 22"/>
+      <path d="M-9.5 -16 H9.5"/>
+      <rect x="-12.5" y="-25" width="25" height="9" rx="3.2"/>
+      <path d="M-4 -33 q-3 -6 0 -11 M5 -33 q-3 -6 0 -11" stroke-width="2.8"/>
+    </g>
+
+    <!-- Hand 2 : smoothie -->
+    <g transform="translate(150,70)">
+      <path d="M-10 92 V44"/>
+      <path d="M10 92 V44"/>
+      <rect x="-13" y="24" width="26" height="20" rx="9"/>
+      <path d="M-6.5 24 v6 M0 24 v6 M6.5 24 v6"/>
+      <path d="M-10 22 L-8 -14 H8 L10 22"/>
+      <path d="M-8.5 -14 q8.5 -15 17 0"/>
+      <path d="M4 -27 L7.5 -2" stroke-width="2.8"/>
+      <circle cx="-2" cy="4" r="1.6" fill="#9CC9B7" stroke="none"/>
+      <circle cx="3" cy="11" r="1.6" fill="#9CC9B7" stroke="none"/>
+      <circle cx="-4" cy="13" r="1.6" fill="#9CC9B7" stroke="none"/>
+    </g>
+
+    <!-- Hand 3 : ice cream cone -->
+    <g transform="translate(242,70)">
+      <path d="M-10 92 V44"/>
+      <path d="M10 92 V44"/>
+      <rect x="-13" y="24" width="26" height="20" rx="9"/>
+      <path d="M-6.5 24 v6 M0 24 v6 M6.5 24 v6"/>
+      <path d="M-9.5 -2 L0 24 L9.5 -2"/>
+      <path d="M-7 4 L7 4 M-4.5 11 L4.5 11" stroke-width="2.4"/>
+      <path d="M-11 -2 q1.5 -10 11 -10 q9.5 0 11 10"/>
+      <path d="M-6.5 -11 q1 -8 6.5 -8 q5.5 0 6.5 8"/>
+      <circle cx="0" cy="-21" r="2" fill="#9CC9B7" stroke="none"/>
+    </g>
+
+  </g>
+</svg>

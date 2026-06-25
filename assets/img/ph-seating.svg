@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Placeholder for the Nectar seating photo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF6ED"/>
+      <stop offset="1" stop-color="#F2E3D2"/>
+    </linearGradient>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <g opacity="0.5"><circle cx="1010" cy="180" r="120" fill="#9CC9B7"/><circle cx="170" cy="760" r="120" fill="#E8685A" opacity="0.5"/></g>
+  <rect width="1200" height="900" filter="url(#n)"/>
+  <rect x="34" y="34" width="1132" height="832" rx="26" fill="none" stroke="#1F2A48" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>
+  <g transform="translate(600,470)" fill="none" stroke="#1F2A48" stroke-opacity="0.55" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-220 60h180a30 30 0 0 1 30 30v60a30 30 0 0 1-30 30h-180Z" fill="#E8685A" fill-opacity="0.5" stroke="none"/>
+    <path d="M-220 -40v220 M-220 60h210v120h-210"/>
+    <circle cx="120" cy="120" r="96" fill="#FBF6ED" stroke="#1F2A48" stroke-opacity="0.55"/>
+    <path d="M120 216v60 M70 276h100" stroke-width="7"/>
+    <path d="M150 40v-60a26 26 0 0 1 52 0v60" stroke-width="7"/>
+  </g>
+  <text x="600" y="828" text-anchor="middle" font-family="'Baloo 2','Trebuchet MS',sans-serif" font-size="36" font-weight="700" fill="#1F2A48" opacity="0.6">nectar</text>
+</svg>

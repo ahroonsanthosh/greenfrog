@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FBF6ED" />
+
+  <title>Nectar Coffee House · Specialty Coffee, Smoothies &amp; Soft Serve in Cork City</title>
+  <meta name="description" content="Nectar is a bright, friendly coffee house on Parnell Place in the heart of Cork City — pouring specialty coffee, ceremonial-grade matcha, real-fruit frozen-yogurt smoothies and creamy soft serve, seven days a week." />
+  <link rel="canonical" href="https://www.nectarcoffeehouse.ie/" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="cafe" />
+  <meta property="og:title" content="Nectar Coffee House · Cork City" />
+  <meta property="og:description" content="Specialty coffee, ceremonial-grade matcha, real-fruit smoothies and soft serve on Parnell Place, Cork. Open 7 days." />
+  <meta property="og:image" content="assets/img/og-image.svg" />
+  <meta property="og:locale" content="en_IE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nectar Coffee House · Cork City" />
+  <meta name="twitter:description" content="Specialty coffee, smoothies &amp; soft serve on Parnell Place, Cork. Open 7 days." />
+  <meta name="twitter:image" content="assets/img/og-image.svg" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+
+  <!-- Fonts: preconnect + a single stylesheet request -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Tell CSS that JS is available as early as possible (prevents flash of unstyled reveals) -->
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+
+  <!-- Local business structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Nectar Coffee House",
+    "image": "https://www.nectarcoffeehouse.ie/assets/img/og-image.svg",
+    "description": "Specialty coffee, ceremonial-grade matcha, real-fruit frozen-yogurt smoothies and soft serve in Cork City.",
+    "servesCuisine": ["Coffee", "Smoothies", "Ice Cream", "Matcha"],
+    "priceRange": "€€",
+    "telephone": "+353-21-427-4631",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "26 Parnell Place",
+      "addressLocality": "Cork",
+      "addressRegion": "County Cork",
+      "postalCode": "T12 C5K0",
+      "addressCountry": "IE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.8983, "longitude": -8.4695 },
+    "sameAs": ["https://www.instagram.com/nectarcoffeehouse/"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "17:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "17:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:30", "closes": "17:00" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Intro / preloader (progressive enhancement: removed if JS is off, never traps content) -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__mark">
+      <span class="preloader__word">nectar</span>
+      <span class="preloader__sub">coffee&nbsp;house</span>
+    </div>
+  </div>
+
+  <!-- Fine paper-grain texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header" data-header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Nectar Coffee House — home">
+        <span class="brand__word">nectar</span>
+        <span class="brand__sub">coffee house</span>
+      </a>
+
+      <nav class="nav__links" id="primary-nav" aria-label="Primary">
+        <a href="#menu" class="nav__link">Menu</a>
+        <a href="#story" class="nav__link">Our Story</a>
+        <a href="#gallery" class="nav__link">Gallery</a>
+        <a href="#visit" class="nav__link">Visit</a>
+      </nav>
+
+      <div class="nav__end">
+        <a class="btn btn--solid btn--sm magnetic" href="#visit" data-magnetic>
+          <span>Find us</span>
+        </a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in nav -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav class="mobile-nav__inner" aria-label="Mobile">
+      <a href="#menu" class="mobile-nav__link"><span class="mobile-nav__idx">01</span> Menu</a>
+      <a href="#story" class="mobile-nav__link"><span class="mobile-nav__idx">02</span> Our Story</a>
+      <a href="#gallery" class="mobile-nav__link"><span class="mobile-nav__idx">03</span> Gallery</a>
+      <a href="#visit" class="mobile-nav__link"><span class="mobile-nav__idx">04</span> Visit</a>
+      <div class="mobile-nav__foot">
+        <a class="btn btn--solid" href="tel:+353214274631">Call (021) 427 4631</a>
+        <a class="mobile-nav__ig" href="https://www.instagram.com/nectarcoffeehouse/" target="_blank" rel="noopener">@nectarcoffeehouse</a>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-scrim" id="nav-scrim" hidden></div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="hero__eyebrow reveal" data-reveal>
+            <span class="dot"></span> Parnell Place · Cork City
+          </p>
+          <h1 class="hero__title">
+            <span class="line reveal" data-reveal>Your daily cup</span>
+            <span class="line reveal" data-reveal>of <em>sunshine</em> in</span>
+            <span class="line reveal" data-reveal>the heart of Cork.</span>
+          </h1>
+          <p class="hero__lead reveal" data-reveal>
+            Nectar is a bright, friendly coffee house pouring specialty coffee,
+            ceremonial-grade matcha, real-fruit frozen-yogurt smoothies and creamy
+            soft serve — made with love, seven days a week.
+          </p>
+          <div class="hero__actions reveal" data-reveal>
+            <a class="btn btn--solid magnetic" href="#menu" data-magnetic><span>Explore the menu</span></a>
+            <a class="btn btn--ghost" href="#visit">
+              <span>Find us on Parnell Pl</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <p class="hero__hours reveal" data-reveal>
+            <span class="status-badge" data-open-badge aria-live="polite"><span class="status-badge__dot"></span> <span data-open-text>Open 7 days</span></span>
+            <span class="hero__hours-text">Mon–Fri 7:30–17:30 · Sat 8–17:30 · Sun 8:30–17</span>
+          </p>
+        </div>
+
+        <div class="hero__media" data-parallax-scope>
+          <div class="hero__photo hero__photo--main" data-parallax="0.06">
+            <img src="assets/img/ph-latte.svg" width="800" height="1000" alt="A Nectar latte with leaf art in a warm yellow cup." />
+          </div>
+          <div class="hero__photo hero__photo--sub" data-parallax="0.14">
+            <img src="assets/img/ph-storefront.svg" width="1200" height="900" alt="The mint-green Nectar Coffee House storefront on Parnell Place." loading="lazy" />
+          </div>
+
+          <!-- Rotating brand badge -->
+          <div class="hero__badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120" class="hero__badge-ring">
+              <defs><path id="badgeCircle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
+              <text class="hero__badge-text"><textPath href="#badgeCircle" startOffset="0">· SPECIALTY COFFEE · CORK CITY · OPEN 7 DAYS </textPath></text>
+            </svg>
+            <span class="hero__badge-core">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 9h12v3a6 6 0 0 1-12 0Z" stroke="currentColor" stroke-width="1.6"/><path d="M16 10h2a2.5 2.5 0 0 1 0 5h-1.2" stroke="currentColor" stroke-width="1.6"/><path d="M7 5.5c-.8.9-.8 1.8 0 2.7M11 5c-.8.9-.8 1.8 0 2.7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+
+          <span class="blob blob--coral" aria-hidden="true"></span>
+          <span class="blob blob--mint" aria-hidden="true"></span>
+          <span class="blob blob--yellow" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <a href="#welcome" class="hero__scroll" aria-label="Scroll to discover">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee>
+        <span>Specialty Coffee</span><span class="marquee__star">✶</span>
+        <span>Ceremonial-Grade Matcha</span><span class="marquee__star">✶</span>
+        <span>Real-Fruit Smoothies</span><span class="marquee__star">✶</span>
+        <span>Creamy Soft Serve</span><span class="marquee__star">✶</span>
+        <span>Plant-Based Milks</span><span class="marquee__star">✶</span>
+        <span>Made in Cork</span><span class="marquee__star">✶</span>
+      </div>
+      <div class="marquee__track" data-marquee aria-hidden="true">
+        <span>Specialty Coffee</span><span class="marquee__star">✶</span>
+        <span>Ceremonial-Grade Matcha</span><span class="marquee__star">✶</span>
+        <span>Real-Fruit Smoothies</span><span class="marquee__star">✶</span>
+        <span>Creamy Soft Serve</span><span class="marquee__star">✶</span>
+        <span>Plant-Based Milks</span><span class="marquee__star">✶</span>
+        <span>Made in Cork</span><span class="marquee__star">✶</span>
+      </div>
+    </div>
+
+    <!-- ============ WELCOME / INTRO ============ -->
+    <section class="welcome section" id="welcome">
+      <div class="container welcome__grid">
+        <div class="welcome__media reveal" data-reveal>
+          <img src="assets/img/ph-counter.svg" width="1200" height="800" alt="The reclaimed-wood counter and espresso bar inside Nectar." loading="lazy" />
+          <div class="welcome__tag">
+            <span class="welcome__tag-num">7</span>
+            <span class="welcome__tag-label">days<br>a week</span>
+          </div>
+        </div>
+        <div class="welcome__body">
+          <p class="eyebrow reveal" data-reveal><span class="dot"></span> Welcome to Nectar</p>
+          <h2 class="h2 reveal" data-reveal>A little pocket of warmth on <em>Parnell Place.</em></h2>
+          <p class="lead reveal" data-reveal>
+            Tucked behind a mint-green shopfront, Nectar is the kind of place you
+            come for a flat white and end up staying all morning. Exposed brick,
+            a reclaimed-timber counter, a shelf of well-thumbed books and a red
+            banquette made for lingering.
+          </p>
+          <p class="reveal" data-reveal>
+            We take the good stuff seriously — single-origin coffee, ceremonial-grade
+            matcha, smoothies blended from real fruit and natural frozen yogurt, and
+            soft serve worth the walk. Plant-based and gluten-free? We've got you.
+          </p>
+
+          <ul class="features reveal" data-reveal>
+            <li class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 9h12v3.5a6 6 0 0 1-12 0Z" stroke="currentColor" stroke-width="1.6"/><path d="M16 10.2h1.8a2.6 2.6 0 0 1 0 5.2H15" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 4.5c-.9 1-.9 2 0 3M10 4c-.9 1-.9 2 0 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M4 19h13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div><h3>Specialty coffee</h3><p>Carefully sourced, expertly pulled.</p></div>
+            </li>
+            <li class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 4c4 0 6 3 6 7 0 3-3 5-6 5s-6-2-6-5c0-4 2-7 6-7Z" stroke="currentColor" stroke-width="1.6"/><path d="M12 4c-2 2-2 5 0 7 2-2 2-5 0-7Z" stroke="currentColor" stroke-width="1.4"/><path d="M12 16v4M9 20h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div><h3>Ceremonial matcha</h3><p>Vivid, stone-ground, the real deal.</p></div>
+            </li>
+            <li class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 8h10l-1 11a2 2 0 0 1-2 1.8h-4A2 2 0 0 1 8 19Z" stroke="currentColor" stroke-width="1.6"/><path d="M7 8c2-2.5 8-2.5 10 0" stroke="currentColor" stroke-width="1.6"/><path d="M14 5l-1.5 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </span>
+              <div><h3>Real-fruit smoothies</h3><p>Blended with natural frozen yogurt.</p></div>
+            </li>
+            <li class="feature">
+              <span class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 10l4 10 4-10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M7 10c0-3 2-5 5-5s5 2 5 5Z" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 6.5C8.5 5 10 4 12 4s3.5 1 3.5 2.5" stroke="currentColor" stroke-width="1.4"/></svg>
+              </span>
+              <div><h3>Soft serve &amp; treats</h3><p>Vegan &amp; gluten-free options too.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal" data-reveal><span class="dot"></span> The Menu</p>
+          <h2 class="h2 reveal" data-reveal>Coffee. Smoothies. <em>Ice cream.</em></h2>
+          <p class="section-head__lead lead reveal" data-reveal>Everything made fresh on Parnell Place. Plant-based milks always available, and a fresh sandwich selection daily.</p>
+        </header>
+
+        <div class="menu__layout">
+          <!-- Tabs -->
+          <div class="menu__tabs" role="tablist" aria-label="Menu categories" data-menu-tabs>
+            <button class="menu__tab is-active" role="tab" aria-selected="true" aria-controls="panel-coffee" id="tab-coffee" data-tab="coffee">
+              <span class="menu__tab-num">01</span> Coffee &amp; Tea
+            </button>
+            <button class="menu__tab" role="tab" aria-selected="false" aria-controls="panel-matcha" id="tab-matcha" data-tab="matcha" tabindex="-1">
+              <span class="menu__tab-num">02</span> Matcha
+            </button>
+            <button class="menu__tab" role="tab" aria-selected="false" aria-controls="panel-smoothies" id="tab-smoothies" data-tab="smoothies" tabindex="-1">
+              <span class="menu__tab-num">03</span> Smoothies
+            </button>
+            <button class="menu__tab" role="tab" aria-selected="false" aria-controls="panel-treats" id="tab-treats" data-tab="treats" tabindex="-1">
+              <span class="menu__tab-num">04</span> Soft Serve
+            </button>
+          </div>
+
+          <!-- Panels -->
+          <div class="menu__panels">
+            <!-- COFFEE -->
+            <div class="menu__panel is-active" role="tabpanel" id="panel-coffee" aria-labelledby="tab-coffee" data-panel="coffee">
+              <ul class="menu__list">
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Black Coffee</h3><span class="menu__price"></span></div><p class="menu__desc">House espresso pulled long — bold, smooth, no fuss.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">White Coffee</h3><span class="menu__price"></span></div><p class="menu__desc">Espresso &amp; silky steamed milk — flat white, cappuccino or latte.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Iced Coffee</h3><span class="menu__price"></span></div><p class="menu__desc">Double shot over ice. Cold, crisp, refreshing.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Chai Latte</h3><span class="menu__price"></span></div><p class="menu__desc">Warmly spiced and aromatic, steamed to order.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Herbal &amp; Iced Tea</h3><span class="menu__price"></span></div><p class="menu__desc">A rotating selection of herbal infusions and iced teas.</p></li>
+              </ul>
+              <p class="menu__footnote">Plant-based milks available · Fresh sandwich selection made daily.</p>
+            </div>
+
+            <!-- MATCHA -->
+            <div class="menu__panel" role="tabpanel" id="panel-matcha" aria-labelledby="tab-matcha" data-panel="matcha" hidden>
+              <ul class="menu__list">
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Matcha Latte</h3><span class="menu__price"></span></div><p class="menu__desc">Ceremonial-grade matcha whisked with your choice of milk.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Hot Matcha</h3><span class="menu__price"></span></div><p class="menu__desc">Pure ceremonial-grade matcha — earthy, smooth and warming.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Iced Matcha</h3><span class="menu__price"></span></div><p class="menu__desc">Stone-ground matcha over ice. Vivid green and refreshing.</p></li>
+              </ul>
+              <p class="menu__footnote">Made with ceremonial-grade matcha · Plant-based milks available.</p>
+            </div>
+
+            <!-- SMOOTHIES -->
+            <div class="menu__panel" role="tabpanel" id="panel-smoothies" aria-labelledby="tab-smoothies" data-panel="smoothies" hidden>
+              <ul class="menu__list">
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name"><span class="swatch swatch--red" aria-hidden="true"></span>Strawberry Delight</h3><span class="menu__price"></span></div><p class="menu__desc">Strawberry, banana &amp; cranberry juice with natural frozen yogurt.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name"><span class="swatch swatch--red" aria-hidden="true"></span>Raspberry Crush</h3><span class="menu__price"></span></div><p class="menu__desc">Strawberry, raspberry &amp; orange juice with natural frozen yogurt.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name"><span class="swatch swatch--yellow" aria-hidden="true"></span>Tropical Yellow</h3><span class="menu__price"></span></div><p class="menu__desc">Pineapple, melon, kiwi &amp; mango with orange juice and natural frozen yogurt.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name"><span class="swatch swatch--yellow" aria-hidden="true"></span>Exotic Splash</h3><span class="menu__price"></span></div><p class="menu__desc">Pineapple, strawberry &amp; banana with orange juice and natural frozen yogurt.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name"><span class="swatch swatch--green" aria-hidden="true"></span>Green Smoothie</h3><span class="menu__price"></span></div><p class="menu__desc">Leafy greens, banana &amp; apple juice with natural frozen yogurt. Vegan option available.</p></li>
+              </ul>
+              <p class="menu__footnote">One size · Add a protein shot, oats, chia seed or peanut butter for 60c.</p>
+            </div>
+
+            <!-- SOFT SERVE -->
+            <div class="menu__panel" role="tabpanel" id="panel-treats" aria-labelledby="tab-treats" data-panel="treats" hidden>
+              <ul class="menu__list">
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Ice-Cream Cone</h3><span class="menu__price"></span></div><p class="menu__desc">Creamy soft serve in a classic cone.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Small Tub</h3><span class="menu__price"></span></div><p class="menu__desc">A little scoop of soft serve to keep you going.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Regular Tub &amp; 3 Toppings</h3><span class="menu__price"></span></div><p class="menu__desc">A generous helping with three toppings of your choice.</p></li>
+                <li class="menu__item"><div class="menu__row"><h3 class="menu__name">Milkshake</h3><span class="menu__price"></span></div><p class="menu__desc">Thick and creamy — includes one flavour and one topping.</p></li>
+              </ul>
+              <p class="menu__footnote">Vegan &amp; gluten-free treats available · Pick your toppings at the counter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story section" id="story">
+      <div class="container story__grid">
+        <div class="story__body">
+          <p class="eyebrow reveal" data-reveal><span class="dot"></span> Our Story</p>
+          <h2 class="h2 reveal" data-reveal>Brewed with heart, <em>poured with care.</em></h2>
+          <p class="lead reveal" data-reveal>
+            Nectar began with a simple idea: a neighbourhood spot where great coffee
+            meets a genuine welcome. No pretence, no rush — just good things made well.
+          </p>
+          <p class="reveal" data-reveal>
+            Every cup is pulled with intention, every smoothie blended from real fruit,
+            and every soft serve swirled to order. We're proudly part of Cork's daily
+            rhythm — the first flat white of the morning, the afternoon catch-up, the
+            sweet treat on the way home.
+          </p>
+          <blockquote class="story__quote reveal" data-reveal>
+            <span>“Come as a customer, leave as a regular.”</span>
+          </blockquote>
+          <div class="stats reveal" data-reveal>
+            <div class="stat"><span class="stat__num" data-count="7" data-suffix="">0</span><span class="stat__label">days a week</span></div>
+            <div class="stat"><span class="stat__num" data-count="100" data-suffix="%">0</span><span class="stat__label">specialty grade</span></div>
+            <div class="stat"><span class="stat__num" data-count="20" data-prefix="" data-suffix="+">0</span><span class="stat__label">menu favourites</span></div>
+          </div>
+        </div>
+
+        <div class="story__media" data-parallax-scope>
+          <figure class="story__photo story__photo--a reveal" data-reveal data-parallax="0.05">
+            <img src="assets/img/ph-seating.svg" width="1200" height="900" alt="The red banquette and reclaimed-wood tables inside Nectar." loading="lazy" />
+          </figure>
+          <figure class="story__photo story__photo--b reveal" data-reveal data-parallax="0.12">
+            <img src="assets/img/ph-smoothie.svg" width="1000" height="1000" alt="A real-fruit smoothie made with natural frozen yogurt." loading="lazy" />
+          </figure>
+          <span class="story__sticker" aria-hidden="true">Est. in Cork</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow reveal" data-reveal><span class="dot"></span> The Space</p>
+          <h2 class="h2 reveal" data-reveal>A few moments from <em>Nectar.</em></h2>
+        </header>
+      </div>
+
+      <div class="container-wide">
+        <div class="gallery__grid" data-lightbox-group>
+          <button class="gallery__item gallery__item--tall reveal" data-reveal data-lightbox data-full="assets/img/ph-storefront.svg" data-caption="Our mint-green shopfront on Parnell Place">
+            <img src="assets/img/ph-storefront.svg" width="1200" height="900" alt="The Nectar Coffee House storefront." loading="lazy" />
+            <span class="gallery__plus" aria-hidden="true"></span>
+          </button>
+          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/img/ph-latte.svg" data-caption="Leaf art, every cup">
+            <img src="assets/img/ph-latte.svg" width="800" height="1000" alt="Latte art in a yellow cup." loading="lazy" />
+            <span class="gallery__plus" aria-hidden="true"></span>
+          </button>
+          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/img/ph-counter.svg" data-caption="The espresso bar">
+            <img src="assets/img/ph-counter.svg" width="1200" height="800" alt="The Nectar counter and espresso machine." loading="lazy" />
+            <span class="gallery__plus" aria-hidden="true"></span>
+          </button>
+          <button class="gallery__item gallery__item--wide reveal" data-reveal data-lightbox data-full="assets/img/ph-seating.svg" data-caption="Pull up a chair">
+            <img src="assets/img/ph-seating.svg" width="1200" height="900" alt="The red banquette seating area." loading="lazy" />
+            <span class="gallery__plus" aria-hidden="true"></span>
+          </button>
+          <button class="gallery__item reveal" data-reveal data-lightbox data-full="assets/img/ph-menu.svg" data-caption="Today's menu boards">
+            <img src="assets/img/ph-menu.svg" width="800" height="1000" alt="The colourful Nectar menu boards." loading="lazy" />
+            <span class="gallery__plus" aria-hidden="true"></span>
+          </button>
+          <button class="gallery__item gallery__item--tall reveal" data-reveal data-lightbox data-full="assets/img/ph-softserve.svg" data-caption="Soft serve, swirled to order">
+            <img src="assets/img/ph-softserve.svg" width="800" height="1000" alt="A soft serve ice cream cone." loading="lazy" />
+            <span class="gallery__plus" aria-hidden="true"></span>
+          </button>
+        </div>
+        <p class="gallery__hint reveal" data-reveal>
+          <a class="link-underline" href="https://www.instagram.com/nectarcoffeehouse/" target="_blank" rel="noopener">Follow @nectarcoffeehouse on Instagram →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit section" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow reveal" data-reveal><span class="dot"></span> Visit Us</p>
+          <h2 class="h2 reveal" data-reveal>Find us in the <em>heart of Cork.</em></h2>
+
+          <div class="visit__cards">
+            <div class="visit-card reveal" data-reveal>
+              <h3 class="visit-card__title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>
+                Where
+              </h3>
+              <address class="visit-card__body">
+                Nectar Coffee House<br>
+                26 Parnell Place<br>
+                Cork, T12 C5K0
+              </address>
+              <a class="link-underline" href="https://www.google.com/maps/dir/?api=1&destination=Nectar%20Coffee%20House%2C%2026%20Parnell%20Place%2C%20Cork%20T12%20C5K0" target="_blank" rel="noopener">Get directions →</a>
+            </div>
+
+            <div class="visit-card reveal" data-reveal>
+              <h3 class="visit-card__title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Opening hours
+              </h3>
+              <ul class="hours" data-hours>
+                <li class="hours__row" data-day="1"><span>Monday</span><span>7:30 – 17:30</span></li>
+                <li class="hours__row" data-day="2"><span>Tuesday</span><span>7:30 – 17:30</span></li>
+                <li class="hours__row" data-day="3"><span>Wednesday</span><span>7:30 – 17:30</span></li>
+                <li class="hours__row" data-day="4"><span>Thursday</span><span>7:30 – 17:30</span></li>
+                <li class="hours__row" data-day="5"><span>Friday</span><span>7:30 – 17:30</span></li>
+                <li class="hours__row" data-day="6"><span>Saturday</span><span>8:00 – 17:30</span></li>
+                <li class="hours__row" data-day="0"><span>Sunday</span><span>8:30 – 17:00</span></li>
+              </ul>
+              <p class="visit-card__status"><span class="status-badge" data-open-badge><span class="status-badge__dot"></span> <span data-open-text>Open 7 days</span></span></p>
+            </div>
+
+            <div class="visit-card reveal" data-reveal>
+              <h3 class="visit-card__title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5h4l1.6 4.2-2 1.4a12 12 0 0 0 4.8 4.8l1.4-2L19 19v0a2 2 0 0 1-2 2 14 14 0 0 1-13-13 2 2 0 0 1 1-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                Say hello
+              </h3>
+              <p class="visit-card__body">
+                <a class="link-underline" href="tel:+353214274631">(021) 427 4631</a><br>
+                <a class="link-underline" href="https://www.instagram.com/nectarcoffeehouse/" target="_blank" rel="noopener">@nectarcoffeehouse</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit__map reveal" data-reveal>
+          <div class="map" id="map" data-map>
+            <div class="map__placeholder" data-map-placeholder>
+              <div class="map__pin">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 22s7.5-6 7.5-12a7.5 7.5 0 1 0-15 0c0 6 7.5 12 7.5 12Z" fill="#E8685A"/><circle cx="12" cy="10" r="2.8" fill="#FBF6ED"/></svg>
+              </div>
+              <p class="map__label">26 Parnell Place, Cork</p>
+              <button class="btn btn--solid btn--sm" data-map-load type="button"><span>Load interactive map</span></button>
+              <p class="map__note">Loads OpenStreetMap on demand to keep things fast.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand brand--light" href="#top" aria-label="Nectar Coffee House — home">
+          <span class="brand__word">nectar</span>
+          <span class="brand__sub">coffee house</span>
+        </a>
+        <p class="footer__tag">Coffee · Smoothies · Ice Cream<br>Made with love in Cork City.</p>
+        <div class="footer__hands" aria-hidden="true">
+          <img src="assets/img/three-hands.svg" width="180" height="102" alt="" loading="lazy" />
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Footer">
+        <h4 class="footer__heading">Explore</h4>
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Find us</h4>
+        <address class="footer__address">
+          26 Parnell Place<br>
+          Cork, T12 C5K0<br>
+          <a href="tel:+353214274631">(021) 427 4631</a><br>
+          <a href="https://www.instagram.com/nectarcoffeehouse/" target="_blank" rel="noopener">@nectarcoffeehouse</a>
+        </address>
+      </div>
+
+      <div class="footer__col footer__news">
+        <h4 class="footer__heading">The good stuff</h4>
+        <p>Specials, seasonal smoothies and the odd free coffee — straight to your inbox.</p>
+        <form class="newsletter" data-newsletter novalidate>
+          <label class="sr-only" for="news-email">Email address</label>
+          <input id="news-email" class="newsletter__input" type="email" name="email" placeholder="you@email.com" autocomplete="email" required />
+          <button class="newsletter__btn" type="submit" aria-label="Subscribe">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="newsletter__msg" data-newsletter-msg aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__base">
+      <p>&copy; <span data-year>2026</span> Nectar Coffee House. All rights reserved.</p>
+      <p class="footer__credit">Crafted with care in Cork. <span aria-hidden="true">☕</span></p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" data-lightbox-close aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Previous">&#8249;</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" data-lightbox-img src="" alt="" />
+      <figcaption class="lightbox__caption" data-lightbox-caption></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Next">&#8250;</button>
+  </div>
+
+  <!-- Back to top -->
+  <button class="to-top" id="to-top" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Placeholder for a Nectar latte photo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EE7A66"/>
+      <stop offset="0.55" stop-color="#E8685A"/>
+      <stop offset="1" stop-color="#F4C430"/>
+    </linearGradient>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <g fill="#FBF6ED" opacity="0.10"><circle cx="120" cy="160" r="90"/><circle cx="690" cy="820" r="130"/><circle cx="660" cy="120" r="46"/></g>
+  <rect width="800" height="1000" filter="url(#n)"/>
+  <rect x="34" y="34" width="732" height="932" rx="26" fill="none" stroke="#FBF6ED" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>
+  <g transform="translate(400,470)" fill="none" stroke="#FBF6ED" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
+    <path d="M-150 -120c-18 22-18 44 0 66 M-110 -132c-18 22-18 44 0 66 M-70 -120c-18 22-18 44 0 66" stroke-width="7" opacity="0.8"/>
+    <path d="M-185 -40h300l-26 150a124 124 0 0 1-124 104 124 124 0 0 1-124-104Z"/>
+    <path d="M112 -22h34a56 56 0 0 1 0 112h-26"/>
+    <rect x="-205" y="232" width="320" height="26" rx="13"/>
+    <g stroke-width="6" opacity="0.85"><path d="M-35 28c0 26 35 26 35 0 0-26 35-26 35 0"/><path d="M-35 78c0 22 35 22 35 0 0-22 35-22 35 0"/><path d="M-17 -22v150"/></g>
+  </g>
+  <text x="400" y="930" text-anchor="middle" font-family="'Baloo 2','Trebuchet MS',sans-serif" font-size="40" font-weight="700" fill="#FBF6ED" opacity="0.92">nectar</text>
+</svg>
