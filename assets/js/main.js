@@ -445,7 +445,7 @@
       var distance = section.offsetHeight - window.innerHeight;
       var p = clamp(-rect.top / (distance || 1), 0, 1);
 
-      if (scaleEl) scaleEl.style.transform = "scale(" + (1 + 2.0 * p).toFixed(3) + ")";
+      if (scaleEl) scaleEl.style.transform = "scale(" + (1 + 1.4 * p).toFixed(3) + ")";
       if (scrim) scrim.style.opacity = clamp(1 - p / 0.42, 0, 1).toFixed(3);
       if (cue) cue.style.opacity = clamp(1 - p / 0.06, 0, 1).toFixed(3);
       if (cup) cup.style.opacity = (p > 0.9 ? 1 - ((p - 0.9) / 0.1) * 0.3 : 1).toFixed(3);
