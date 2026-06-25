@@ -439,13 +439,23 @@
     section.classList.add("is-cinematic");
 
     function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+
+    // Grow the cup until it nearly touches the nearest screen edge while
+    // staying a fully visible circle — derived from the live viewport.
+    var maxScale = 2.2;
+    function measure() {
+      var base = scaleEl ? scaleEl.offsetWidth : 0;
+      var target = 0.92 * Math.min(window.innerWidth, window.innerHeight);
+      maxScale = base > 0 ? Math.max(1, target / base) : 2.2;
+    }
+
     var ticking = false;
     function update() {
       var rect = section.getBoundingClientRect();
       var distance = section.offsetHeight - window.innerHeight;
       var p = clamp(-rect.top / (distance || 1), 0, 1);
 
-      if (scaleEl) scaleEl.style.transform = "scale(" + (1 + 1.4 * p).toFixed(3) + ")";
+      if (scaleEl) scaleEl.style.transform = "scale(" + (1 + (maxScale - 1) * p).toFixed(3) + ")";
       if (scrim) scrim.style.opacity = clamp(1 - p / 0.42, 0, 1).toFixed(3);
       if (cue) cue.style.opacity = clamp(1 - p / 0.06, 0, 1).toFixed(3);
       if (cup) cup.style.opacity = (p > 0.9 ? 1 - ((p - 0.9) / 0.1) * 0.3 : 1).toFixed(3);
@@ -460,7 +470,8 @@
     window.addEventListener("scroll", function () {
       if (!ticking) { requestAnimationFrame(update); ticking = true; }
     }, { passive: true });
-    window.addEventListener("resize", update);
+    window.addEventListener("resize", function () { measure(); update(); });
+    measure();
     update();
   })();
 
