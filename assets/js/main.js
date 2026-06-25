@@ -363,23 +363,32 @@
   })();
 
   /* --------------------------------------------------------------------- */
-  /* Click-to-load map (keeps initial load light & private)                */
+  /* Map — auto-loads a Google embed once it scrolls into view             */
   /* --------------------------------------------------------------------- */
   (function lazyMap() {
-    var btn = $("[data-map-load]");
     var holder = $("[data-map]");
-    var placeholder = $("[data-map-placeholder]");
-    if (!btn || !holder) return;
-    btn.addEventListener("click", function () {
+    if (!holder) return;
+    var placeholder = $("[data-map-placeholder]", holder);
+    var loaded = false;
+    function load() {
+      if (loaded) return; loaded = true;
       var iframe = document.createElement("iframe");
       iframe.title = "Map showing Nectar Coffee House, 26 Parnell Place, Cork";
       iframe.loading = "lazy";
       iframe.allowFullscreen = true;
       iframe.referrerPolicy = "no-referrer-when-downgrade";
-      iframe.src = "https://www.openstreetmap.org/export/embed.html?bbox=-8.4760%2C51.8945%2C-8.4630%2C51.9015&layer=mapnik&marker=51.8983%2C-8.4695";
+      iframe.src = "https://www.google.com/maps?q=Nectar+Coffee+House,+26+Parnell+Place,+Cork+T12+C5K0&z=16&output=embed";
       holder.appendChild(iframe);
-      if (placeholder) placeholder.style.display = "none";
-    });
+      if (placeholder) placeholder.classList.add("is-hidden");
+    }
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { load(); io.disconnect(); } });
+      }, { rootMargin: "300px" });
+      io.observe(holder);
+    } else {
+      load();
+    }
   })();
 
   /* --------------------------------------------------------------------- */
